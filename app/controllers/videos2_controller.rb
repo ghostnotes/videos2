@@ -1,8 +1,8 @@
 require 'open-uri'
 require 'nokogiri'
 
-DEFAULT_MAX_TITLE_LENGTH = 20
-DEFAULT_MAX_DESCRIPTION_LENGTH = 45
+DEFAULT_MAX_TITLE_LENGTH = 30
+DEFAULT_MAX_DESCRIPTION_LENGTH = 60
 DEFAULT_MAX_VIDEO_LINE_LENGTH = 6
 
 class Videos2Controller < ApplicationController
