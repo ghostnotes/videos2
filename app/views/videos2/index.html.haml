@@ -1,0 +1,14 @@
+%h3= 'Vimeo'
+
+- @videos_array.each do |video_infos|
+  %ul.thumbnails
+    - video_infos.each do |video_info|
+      %li.span2
+        .thumbnail
+          %a.fancybox-media{ href: video_info[:url] }
+            %img{ src: video_info[:image] }
+          .mini.text-right
+            = video_info[:upload_date]
+          %a.fancybox-media.video-title{ href: video_info[:url] }
+            %h4= video_info[:title]
+          %p= video_info[:description]
